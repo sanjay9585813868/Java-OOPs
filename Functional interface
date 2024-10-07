@@ -1,0 +1,14 @@
+@FunctionalInterface
+interface MyFunctionalInterface {
+    void printMessage(String message);
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Using a lambda expression to implement the functional interface
+        MyFunctionalInterface myFunc = (message) -> System.out.println("Message: " + message);
+        
+        // Calling the method
+        myFunc.printMessage("Hello, Functional Interface!");
+    }
+}
